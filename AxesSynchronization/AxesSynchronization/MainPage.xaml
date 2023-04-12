@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:model="clr-namespace:AxesSynchronization"
+             x:Class="AxesSynchronization.MainPage">
+
+    <ContentPage.BindingContext>
+        <model:ViewModel></model:ViewModel>
+    </ContentPage.BindingContext>
+
+    <Grid Margin="20,30,20,30">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--chart 1-->
+        <chart:SfCartesianChart Grid.Row="0" >
+
+            <chart:SfCartesianChart.XAxes>
+                <chart:CategoryAxis x:Name="XAxis1" ShowMajorGridLines="False" IsVisible="False"/>
+            </chart:SfCartesianChart.XAxes>
+
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis />
+            </chart:SfCartesianChart.YAxes>
+
+            <chart:SfCartesianChart.Series>
+                <chart:FastLineSeries Fill="#01AEC6" StrokeWidth="2" 
+                                      ItemsSource="{Binding Data1}" XBindingPath="Name" YBindingPath="Value" >
+                </chart:FastLineSeries>
+            </chart:SfCartesianChart.Series>
+        </chart:SfCartesianChart>
+
+
+        <!--chart 2-->
+        <chart:SfCartesianChart Grid.Row="1"  Margin="0,20,0,0">
+
+            <chart:SfCartesianChart.XAxes>
+                <chart:CategoryAxis x:Name="XAxis2" ShowMajorGridLines="False" 
+                                    ZoomPosition="{Binding Path=ZoomPosition,Source={x:Reference XAxis1},Mode=TwoWay}" 
+                                   ZoomFactor="{Binding Path=ZoomFactor, Source={x:Reference XAxis1},Mode=TwoWay}" IsVisible="False"/>
+            </chart:SfCartesianChart.XAxes>
+
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis Interval="3"/>
+            </chart:SfCartesianChart.YAxes>
+
+            <chart:SfCartesianChart.Series>
+                <chart:SplineAreaSeries  ItemsSource="{Binding Data2}" XBindingPath="Name" YBindingPath="Value" 
+                                   Stroke="#8EC911" Fill="#bdeb5e" StrokeWidth="2">
+                </chart:SplineAreaSeries>
+            </chart:SfCartesianChart.Series>
+        </chart:SfCartesianChart>
+
+        <!--chart 3-->
+        <chart:SfCartesianChart Grid.Row="2" Margin="0,20,0,10">
+
+            <chart:SfCartesianChart.XAxes>
+                <chart:NumericalAxis x:Name="XAxis3" ShowMajorGridLines="False" 
+                                     Interval="1" ZoomPosition="{Binding Path=ZoomPosition,Source={x:Reference XAxis1},Mode=TwoWay}" 
+                                      ZoomFactor="{Binding Path=ZoomFactor, Source={x:Reference XAxis1},Mode=TwoWay}" />
+            </chart:SfCartesianChart.XAxes>
+
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis />
+            </chart:SfCartesianChart.YAxes>
+
+            <chart:SfCartesianChart.Series>
+                <chart:ColumnSeries Stroke="#A63BE8" Fill="#b893f5" 
+                                    ItemsSource="{Binding Data3}" XBindingPath="Name" YBindingPath="Value" >
+                </chart:ColumnSeries>
+            </chart:SfCartesianChart.Series>
+
+            <chart:SfCartesianChart.ZoomPanBehavior>
+                <chart:ChartZoomPanBehavior />
+            </chart:SfCartesianChart.ZoomPanBehavior>
+
+        </chart:SfCartesianChart>
+
+    </Grid>
+
+</ContentPage>
