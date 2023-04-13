@@ -60,7 +60,7 @@ If you need to create multiple charts to get the best visual representation of y
                 </chart:ColumnSeries>
             </chart:SfCartesianChart.Series>
             <chart:SfCartesianChart.ZoomPanBehavior>
-                <chart:ChartZoomPanBehavior />
+                <chart:ChartZoomPanBehavior ZoomMode="X"/>
             </chart:SfCartesianChart.ZoomPanBehavior>
 
         </chart:SfCartesianChart>
@@ -136,5 +136,7 @@ If you need to create multiple charts to get the best visual representation of y
 ```
 
 **Output:** 
-![Axes](https://user-images.githubusercontent.com/103025761/231425834-5132e74a-5792-4c1f-9621-f6ebfee1d3dd.gif)
+![Axes_Synchronization](https://user-images.githubusercontent.com/103025761/231675189-e07e463b-ee69-4928-bbb4-64ff099dd83f.gif)
+
+
 
