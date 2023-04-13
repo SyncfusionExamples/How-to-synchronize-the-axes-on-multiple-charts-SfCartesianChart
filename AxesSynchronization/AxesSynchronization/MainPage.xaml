@@ -76,7 +76,7 @@
             </chart:SfCartesianChart.Series>
 
             <chart:SfCartesianChart.ZoomPanBehavior>
-                <chart:ChartZoomPanBehavior />
+                <chart:ChartZoomPanBehavior ZoomMode="X"/>
             </chart:SfCartesianChart.ZoomPanBehavior>
 
         </chart:SfCartesianChart>
