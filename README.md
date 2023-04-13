@@ -136,6 +136,7 @@ If you need to create multiple charts to get the best visual representation of y
 ```
 
 **Output:** 
-![Presentation2](https://user-images.githubusercontent.com/103025761/231674955-c32100e9-5aa1-4edc-9bd1-705d19a3da56.gif)
+![Axes_Synchronization](https://user-images.githubusercontent.com/103025761/231675189-e07e463b-ee69-4928-bbb4-64ff099dd83f.gif)
+
 
 
