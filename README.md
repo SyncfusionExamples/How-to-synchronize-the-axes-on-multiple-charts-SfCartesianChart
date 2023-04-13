@@ -1,4 +1,4 @@
-# How to synchronize the axes on multiple charts(SfCartesianChart)
+# How to synchronize the axes on multiple charts?(SfCartesianChart)
 The [.NET MAUI Cartesian Chart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts) can allow synchronization of the axis, zooming, and panning on multiple charts.
 
 If you need to create multiple charts to get the best visual representation of your data, it could be a smart idea to bind them together, making it easy to effectively compare the data.
