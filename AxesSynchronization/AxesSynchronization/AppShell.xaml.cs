@@ -1,9 +1,10 @@
-﻿namespace AxesSynchronization;
-
-public partial class AppShell : Shell
+﻿namespace AxesSynchronization
 {
-	public AppShell()
-	{
-		InitializeComponent();
-	}
+    public partial class AppShell : Shell
+    {
+        public AppShell()
+        {
+            InitializeComponent();
+        }
+    }
 }

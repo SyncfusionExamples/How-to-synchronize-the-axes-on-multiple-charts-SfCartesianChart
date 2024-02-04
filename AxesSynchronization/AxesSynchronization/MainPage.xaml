@@ -30,7 +30,7 @@
 
             <chart:SfCartesianChart.Series>
                 <chart:FastLineSeries Fill="#01AEC6" StrokeWidth="2" 
-                                      ItemsSource="{Binding Data1}" XBindingPath="Name" YBindingPath="Value" >
+                                   ItemsSource="{Binding Data1}" XBindingPath="Name" YBindingPath="Value" >
                 </chart:FastLineSeries>
             </chart:SfCartesianChart.Series>
         </chart:SfCartesianChart>
@@ -41,8 +41,8 @@
 
             <chart:SfCartesianChart.XAxes>
                 <chart:CategoryAxis x:Name="XAxis2" ShowMajorGridLines="False" 
-                                    ZoomPosition="{Binding Path=ZoomPosition,Source={x:Reference XAxis1},Mode=TwoWay}" 
-                                   ZoomFactor="{Binding Path=ZoomFactor, Source={x:Reference XAxis1},Mode=TwoWay}" IsVisible="False"/>
+                                 ZoomPosition="{Binding Path=ZoomPosition,Source={x:Reference XAxis1},Mode=TwoWay}" 
+                                ZoomFactor="{Binding Path=ZoomFactor, Source={x:Reference XAxis1},Mode=TwoWay}" IsVisible="False"/>
             </chart:SfCartesianChart.XAxes>
 
             <chart:SfCartesianChart.YAxes>
@@ -51,7 +51,7 @@
 
             <chart:SfCartesianChart.Series>
                 <chart:SplineAreaSeries  ItemsSource="{Binding Data2}" XBindingPath="Name" YBindingPath="Value" 
-                                   Stroke="#8EC911" Fill="#bdeb5e" StrokeWidth="2">
+                                Stroke="#8EC911" Fill="#bdeb5e" StrokeWidth="2">
                 </chart:SplineAreaSeries>
             </chart:SfCartesianChart.Series>
         </chart:SfCartesianChart>
@@ -61,8 +61,8 @@
 
             <chart:SfCartesianChart.XAxes>
                 <chart:NumericalAxis x:Name="XAxis3" ShowMajorGridLines="False" 
-                                     Interval="1" ZoomPosition="{Binding Path=ZoomPosition,Source={x:Reference XAxis1},Mode=TwoWay}" 
-                                      ZoomFactor="{Binding Path=ZoomFactor, Source={x:Reference XAxis1},Mode=TwoWay}" />
+                                  Interval="1" ZoomPosition="{Binding Path=ZoomPosition,Source={x:Reference XAxis1},Mode=TwoWay}" 
+                                   ZoomFactor="{Binding Path=ZoomFactor, Source={x:Reference XAxis1},Mode=TwoWay}" />
             </chart:SfCartesianChart.XAxes>
 
             <chart:SfCartesianChart.YAxes>
@@ -71,7 +71,7 @@
 
             <chart:SfCartesianChart.Series>
                 <chart:ColumnSeries Stroke="#A63BE8" Fill="#b893f5" 
-                                    ItemsSource="{Binding Data3}" XBindingPath="Name" YBindingPath="Value" >
+                                 ItemsSource="{Binding Data3}" XBindingPath="Name" YBindingPath="Value" >
                 </chart:ColumnSeries>
             </chart:SfCartesianChart.Series>
 

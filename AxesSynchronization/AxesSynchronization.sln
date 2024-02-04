@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.31611.283
+VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AxesSynchronization", "AxesSynchronization\AxesSynchronization.csproj", "{0E872A46-395B-42A5-89CF-D8240288E08E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxesSynchronization", "AxesSynchronization\AxesSynchronization.csproj", "{B8BED08D-8C56-447B-9766-5F306AE62CEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +11,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0E872A46-395B-42A5-89CF-D8240288E08E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E872A46-395B-42A5-89CF-D8240288E08E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E872A46-395B-42A5-89CF-D8240288E08E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{0E872A46-395B-42A5-89CF-D8240288E08E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0E872A46-395B-42A5-89CF-D8240288E08E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0E872A46-395B-42A5-89CF-D8240288E08E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B8BED08D-8C56-447B-9766-5F306AE62CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BED08D-8C56-447B-9766-5F306AE62CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BED08D-8C56-447B-9766-5F306AE62CEE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B8BED08D-8C56-447B-9766-5F306AE62CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BED08D-8C56-447B-9766-5F306AE62CEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8BED08D-8C56-447B-9766-5F306AE62CEE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+		SolutionGuid = {1D9A77FE-E00E-4A07-AF45-20DABB613658}
 	EndGlobalSection
 EndGlobal
